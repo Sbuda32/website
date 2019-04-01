@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>LaTeX4Web 1.4 OUTPUT</title>
+<style type="text/css">
+ body {color: black;  background:"#FFCC99";  }
+ div.p { margin-top: 7pt;}
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.norm {line-height:normal;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td.sqrt {border-top:2 solid black;
+          border-left:2 solid black;
+          border-bottom:none;
+          border-right:none;}
+ table.sqrt {border-top:2 solid black;
+             border-left:2 solid black;
+             border-bottom:none;
+             border-right:none;}
+</style>
+</head>
+<body>
+
+\documentclassarticle
+\usepackage[top=0cm, bottom=2cm, outer=0cm, inner=0cm,a4paper]geometry
+\usepackage[pages=some]background
+\usepackagexcolor
+\usepackagefontspec
+\usepackagemulticol
+
+
+\definecolormaterialGreen 	RGB068,225,130
+\definecolormaterialGreenDark RGB029,184,090
+\definecolormaterialRed   	RGB218,068,049
+\definecolormaterialRedDark   RGB173,045,031
+\definecolormaterialPurple   	RGB153,039,176
+\definecolormaterialPurpleDarkRGB088,022,099
+\definecolormaterialBlue  	RGB044,116,246
+\definecolormaterialBlueDark  RGB010,082,216
+\definecolormaterialYellow	RGB254,193,005
+\definecolormaterialYellowDarkRGB194,147,001
+\definecolortextGray			RGB070,070,070
+\definecolortextLightGray		RGB140,140,140
+
+\setmainfontRoboto
+
+\backgroundsetup
+scale=1,
+color=black,
+opacity=1,
+placement=top,
+angle=0,
+contents=   <font face=symbol>Î</font> cludegraphics[width=\paperwidth,height=200pt]images/pic
+  
+\begindocument
+	\colortextGray
+	\pagenumberinggobble
+	\vspace*105pt 	\Huge
+	\BgThispage
+		\textcolorwhiteFirst Name
+
+		\textcolorwhiteLast Name
+	\BgThispage
+	\vspace*20pt
+	
+		 <font face=symbol>Î</font> putinfo_contacts
+	
+		 <font face=symbol>Î</font> putinfo_experience
+	
+		 <font face=symbol>Î</font> putinfo_education
+	
+		 <font face=symbol>Î</font> putinfo_interests
+
+		 <font face=symbol>Î</font> putinfo_awards
+\enddocument</body>
+</html>
