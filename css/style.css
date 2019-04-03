@@ -1,43 +1,109 @@
 html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-  }
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
   
-  canvas {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-  }
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
   
-  #info {
-    position: absolute;
-    width: 100%;
-    top: 25%;
-    z-index: 10;
-    color: #fff;
-    text-shadow: 2px 2px 2px #000;
-    text-align: center;
-  }
+#info {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  z-index: 10;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+}
   
-  a {
-    color: #fff;
-  }
+a {
+  color: #fff;
+}
   
   .link {
-    display: inline-block;
-    padding: 4px;
-    margin: 0 0.5em;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    text-shadow: none;
-    font-size: 24px;
-    transition: all 0.4s;
-  }
+  display: inline-block;
+  padding: 4px;
+  margin: 0 0.5em;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-shadow: none;
+  font-size: 24px;
+  transition: all 0.4s;
+}
+
   .link:hover {
-    color: #FF5649;
-    background-color: white;
-  }
-  
+  color: #FF5649;
+  background-color: white;
+}
+
+@font-face{
+  src: url('./Movement-DirectBlack.woff');
+  font-family: designIndabaFont;
+}
+
+@font-face{
+  src: url('./Movement-DirectThin.woff2');
+  font-family: designIndabaThinFont;
+}
+
+p{
+  font-family: designIndabaThinFont;
+  color: orange;
+}
+
+h1{
+  font-family: designIndabaThinFont;
+  color: orange;
+}
+
+h2 em{ 
+  font-family: designIndabaFont;
+  font-size: 140%;
+  color: orange;
+}
+
+.picture-space{
+  position: absolute;
+  left: 45%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+}
+
+.myProjects .upperLeft{
+  position: absolute;
+  left: 23%;
+  top: 113%;
+  width: 10%;
+  height: 32%;
+  border-radius: 22%;
+  background-color: orange;
+}
+
+.aboutMe .middle{
+  position: absolute;
+  top: 180%;
+  left: 45%;
+  width: 10%;
+  height: 32%;
+  border-radius: 22%;
+  background-color: orange;
+}
+
+.contactMe .upperRight{
+  position: absolute;
+  left: 65%;
+  top: 110%;
+  width: 10%;
+  height: 32%;
+  border-radius: 22%;
+  background-color: orange;
+  box-shadow: #FF5649 12px 12px 4px;
+}
