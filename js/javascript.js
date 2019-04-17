@@ -3,7 +3,9 @@ var light, light1;
 var width, height, cx, cy;
 var rWidth, rHeight;
 var TMath = THREE.Math;
+
 var conf = {
+
   color: 0x9c1e15,
   objectWidth: 30,
   colWidth: 50,
@@ -15,7 +17,8 @@ var conf = {
   light1Color: 0xffffff,
   light2Color: 0xffffff,
   light3Color: 0xffffff,
-  light4Color: 0xffffff };
+  light4Color: 0xffffff 
+};
 
 var objects;
 var simplex = new SimplexNoise();
@@ -24,7 +27,9 @@ var mouse = new THREE.Vector2();
 var mousePlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
 var mousePosition = new THREE.Vector3();
 var raycaster = new THREE.Raycaster();
+
 function init() {
+  
   renderer = new THREE.WebGLRenderer();
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -42,13 +47,17 @@ function init() {
   camera.position.z = 300;
   animate();
 }
+
 function initScene() {
+  
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0xffffff);
   initLights();
   initObjects();
 }
+
 function initLights() {
+
   light = new THREE.AmbientLight(conf.ambientColor);
   scene.add(light);
   light1 = new THREE.PointLight(conf.light1Color, conf.lightIntensity, 500);
@@ -56,7 +65,9 @@ function initLights() {
   light1.castShadow = true;
   scene.add(light1);
 }
+
 function initObjects() {
+
   var geo = new THREE.PlaneBufferGeometry(rWidth * 2, rHeight * 2);
   var mat = new THREE.MeshPhongMaterial({ color: conf.color });
   var plane = new THREE.Mesh(geo, mat);
@@ -82,7 +93,9 @@ function initObjects() {
     }
   }
 }
+
 function animateObjects() {
+
   var time = Date.now() * 0.00005;
   var mx = mouse.x * conf.mouseCoef;
   var my = mouse.y * conf.mouseCoef;
@@ -98,10 +111,15 @@ function animateObjects() {
     mesh.rotation.set(rx, ry, 0);
   }
 }
+
 function initEventHandlers() {
+
   onWindowResize();
+
   window.addEventListener("resize", onWindowResize, false);
+
   document.body.addEventListener("mousemove", function (e) {
+
     var v = new THREE.Vector3();
     camera.getWorldDirection(v);
     v.normalize();
@@ -113,28 +131,39 @@ function initEventHandlers() {
     raycaster.ray.intersectPlane(mousePlane, mousePosition);
     setMapValue(mousePosition.x, mousePosition.y, 50);
   });
+
   document.body.addEventListener("mouseout", function (e) {
+
     mouseOver = false;
   });
 }
+
 function animate() {
+
   requestAnimationFrame(animate);
   animateObjects();
   animateLights();
   renderer.render(scene, camera);
 }
+
 function animateLights() {
+
   if (mouseOver) {
+
     light1.position.x = mousePosition.x;
     light1.position.y = mousePosition.y;
-  } else
-  {
+  } 
+
+  else{
+
     var time = Date.now() * 0.001;
     light1.position.x = Math.sin(time * 0.1) * rWidth / 3;
     light1.position.y = Math.cos(time * 0.2) * rHeight / 3;
   }
 }
+
 function onWindowResize() {
+  
   width = window.innerWidth;
   cx = width / 2;
   height = window.innerHeight;
@@ -143,14 +172,19 @@ function onWindowResize() {
   camera.updateProjectionMatrix();
   renderer.setSize(width, height);
 }
+
 function getRendererSize() {
+
   mouse.x = 1;
   mouse.y = 1;
   raycaster.setFromCamera(mouse, camera);
   raycaster.ray.intersectPlane(new THREE.Plane(new THREE.Vector3(0, 0, 1), 0), mousePosition);
   return [mousePosition.x * 2, mousePosition.y * 2];
 }
+
 function rnd(max, negative) {
+
   return negative ? Math.random() * 2 * max - max : Math.random() * max;
 }
+
 init();
