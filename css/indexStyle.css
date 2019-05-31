@@ -72,8 +72,6 @@ h2 em{
   left: 45%;
   width: 100px;
   height: 100px;
-  /* background-color: brown; */
-  /* background-image: url('../pictures/Pro_Picture.jpg') */
 }
 
 .picture-space img {
@@ -148,7 +146,7 @@ h2 em{
 .contactMe {
   position: relative;
   left: 65%;
-  margin-top: -20%;
+  margin-top: -16%;
   width: 100.89px;
   height: 32%;
 }
