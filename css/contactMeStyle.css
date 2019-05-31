@@ -1,0 +1,109 @@
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
+
+.nav .home-icon {
+    position: relative;
+    width: auto;
+    height: 50px;
+}
+
+.nav .home-icon img {
+    position: relative;
+    left: 15px;
+    width: auto;
+    height: 50px;
+}
+
+.nav .about-me a {
+    position: inherit;
+    text-decoration: none;
+}
+
+.nav .about-me {
+    position: relative;
+    height: 50px;
+    width: 70px;
+    top: -86%;
+    left: 74%;
+}
+
+div.a-me {
+    width: 90px;
+    height: 35px;
+    top: 7px;
+    position: relative;
+    font-family: designIndabaFont;
+    color: orange;
+}
+
+.nav .my-projects {
+    position: relative;
+    height: 50px;
+    width: 70px;
+    top: -186%;
+    left: 86%;
+}
+
+.nav .my-projects a {
+    position: inherit;
+    text-decoration: none;
+}
+
+div.m-pro {
+    width: 108px;
+    height: 35px;
+    top: 7px;
+    position: relative;
+    font-family: designIndabaFont;
+    color: orange;
+}
+
+.content-section {
+    position: relative;
+    margin-top: 7%;
+}
+
+.content-section h1 {
+    text-align: center;
+    font-family: designIndabaFont;
+    font-size: -webkit-xxx-large;
+    color: orange;
+}
+
+.content-section p {
+    color: red;
+    text-align: center;
+    position: relative;
+    margin-top: -2%;
+}
+
+.contact-information {
+    position: relative;
+    margin-top: 10%;
+}
+
+.contact-information h3 {
+    text-align: center;
+    font-family: designIndabaFont;
+    color: orange;
+}
+
+.contact-information h4 {
+    text-align: center;
+    color: red
+}
+
+.contact-information a {
+    position: relative;
+    left: 43%;
+    text-decoration: none;
+    color: red;
+}
+
+@font-face{
+    src: url('./Movement-DirectBlack.woff');
+    font-family: designIndabaFont;
+  }

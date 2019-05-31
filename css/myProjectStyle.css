@@ -1,0 +1,182 @@
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
+
+.nav .home-icon {
+    position: relative;
+    width: auto;
+    height: 50px;
+}
+
+.nav .home-icon img {
+    position: relative;
+    left: 15px;
+    width: auto;
+    height: 50px;
+}
+
+.nav .about-me a {
+    position: inherit;
+    text-decoration: none;
+}
+
+.nav .about-me {
+    position: relative;
+    height: 50px;
+    width: 70px;
+    top: -86%;
+    left: 74%;
+}
+
+div.a-me {
+    width: 90px;
+    height: 35px;
+    top: 7px;
+    position: relative;
+    font-family: designIndabaFont;
+    color: orange;
+}
+
+.nav .contact-me {
+    position: relative;
+    height: 50px;
+    width: 70px;
+    top: -186%;
+    left: 86%;
+}
+
+.nav .contact-me a {
+    position: inherit;
+    text-decoration: none;
+}
+
+div.c-me {
+    width: 108px;
+    height: 35px;
+    top: 7px;
+    position: relative;
+    font-family: designIndabaFont;
+    color: orange;
+}
+
+h2 {
+    font-family: designIndabaFont;
+    text-align: center;
+    color: orange;
+}
+
+.project-card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+    top: 25px;
+    left: 10%;
+    border-radius: 12px;
+}
+
+.project-card .project-pic {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.project-card .project-summary {
+    font-family: designIndabaThinFont;
+    font-size: 12px;
+    font-weight: 900;
+    color: red;
+    padding: 12px;
+}
+
+.project-card2 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+    top: -226px;
+    left: 59%;
+    border-radius: 12px;
+}
+
+.project-card2 .project-pic {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.project-card2 .project-summary {
+    font-family: designIndabaThinFont;
+    font-size: 12px;
+    font-weight: 900;
+    color: red;
+    padding: 12px;
+}
+
+.project-card3 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+    top: -169px;
+    left: 10%;
+    border-radius: 12px;
+}
+
+.project-card3 .project-pic {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.project-card3 .project-summary {
+    font-family: designIndabaThinFont;
+    font-size: 12px;
+    font-weight: 900;
+    color: red;
+    padding: 12px;
+}
+
+.project-card4 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+    top: -419px;
+    left: 59%;
+    border-radius: 12px;
+}
+
+.project-card4 .project-pic {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    background-color: yellow;
+    border-radius: 8px;
+}
+
+.project-card4 .project-summary {
+    font-family: designIndabaThinFont;
+    font-size: 12px;
+    font-weight: 900;
+    color: red;
+    padding: 12px;
+}
+
+@font-face{
+    src: url('./Movement-DirectThin.woff2');
+    font-family: designIndabaThinFont;
+  }
+
+@font-face{
+    src: url('./Movement-DirectBlack.woff');
+    font-family: designIndabaFont;
+  }

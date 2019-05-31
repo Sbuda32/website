@@ -129,7 +129,7 @@ function initEventHandlers() {
     mouse.y = -(e.clientY / height) * 2 + 1;
     raycaster.setFromCamera(mouse, camera);
     raycaster.ray.intersectPlane(mousePlane, mousePosition);
-    setMapValue(mousePosition.x, mousePosition.y, 50);
+    //setMapValue(mousePosition.x, mousePosition.y, 50);
   });
 
   document.body.addEventListener("mouseout", function (e) {
