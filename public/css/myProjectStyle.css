@@ -73,7 +73,7 @@ h2 {
     height: 250px;
     background-color: orange;
     top: 25px;
-    left: 10%;
+    left: 24%;
     border-radius: 12px;
 }
 
@@ -120,7 +120,9 @@ h2 {
     position: relative;
     width: 100%;
     height: 75%;
-    background-image: url("../pictures/todo-list-react-app.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../pictures/todo-list-react-app.png);
     border-radius: 8px;
 }
 
@@ -147,7 +149,7 @@ h2 {
     height: 250px;
     background-color: orange;
     top: -169px;
-    left: 10%;
+    left: 24%;
     border-radius: 12px;
 }
 
