@@ -2,6 +2,7 @@
   "projects": {
     "default": "portfolio-website-24a9b",
     "staging": "portfolio-website-24a9b",
-    "staging-v1": "portfolio-website-24a9b"
+    "staging-v1": "portfolio-website-24a9b",
+    "another-staging": "portfolio-website-24a9b"
   }
 }
