@@ -86,9 +86,10 @@ div.m-pro {
 
 .content-section .text-side p {
     font-family: designIndabaThinFont;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: red;
+    line-height: 24px;
 }
 
 .content-section .text-side h2{
