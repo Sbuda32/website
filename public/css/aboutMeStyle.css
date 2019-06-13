@@ -62,7 +62,7 @@ div.m-pro {
 }
 
 .content-section {
-    position: absolute;
+    position: relative;
     width: 90%;
     height: 90.5%;
 }
