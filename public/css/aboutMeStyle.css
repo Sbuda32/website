@@ -80,16 +80,17 @@ div.m-pro {
 
 .content-section .picture-side img {
     position: relative;
-    width: 100%;
+    width: 78%;
     height: 700px;
 }
 
 .content-section .text-side {
     position: absolute;
-    top: 18%;
+    top: 25%;
     /* left: 60%; */
     left: 53%;
-    width: 44%;
+    width: 32%;
+    
 }
 
 .content-section .text-side p {
